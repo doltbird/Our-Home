@@ -1,0 +1,163 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: main
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/dongshaoqi/Desktop/园区值班/园区值班管理系统/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target main.cpp
+
+
+#############################################
+# Order-only phony target for main.cpp
+
+build cmake_object_order_depends_target_main.cpp: phony || CMakeFiles/main.cpp.dir
+
+build CMakeFiles/main.cpp.dir/FullTime.cpp.o: CXX_COMPILER__main.2ecpp_Debug /Users/dongshaoqi/Desktop/园区值班/园区值班管理系统/FullTime.cpp || cmake_object_order_depends_target_main.cpp
+  DEP_FILE = CMakeFiles/main.cpp.dir/FullTime.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/main.cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.cpp.dir
+
+build CMakeFiles/main.cpp.dir/Manager.cpp.o: CXX_COMPILER__main.2ecpp_Debug /Users/dongshaoqi/Desktop/园区值班/园区值班管理系统/Manager.cpp || cmake_object_order_depends_target_main.cpp
+  DEP_FILE = CMakeFiles/main.cpp.dir/Manager.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/main.cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.cpp.dir
+
+build CMakeFiles/main.cpp.dir/DormArea.cpp.o: CXX_COMPILER__main.2ecpp_Debug /Users/dongshaoqi/Desktop/园区值班/园区值班管理系统/DormArea.cpp || cmake_object_order_depends_target_main.cpp
+  DEP_FILE = CMakeFiles/main.cpp.dir/DormArea.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/main.cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.cpp.dir
+
+build CMakeFiles/main.cpp.dir/Building.cpp.o: CXX_COMPILER__main.2ecpp_Debug /Users/dongshaoqi/Desktop/园区值班/园区值班管理系统/Building.cpp || cmake_object_order_depends_target_main.cpp
+  DEP_FILE = CMakeFiles/main.cpp.dir/Building.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/main.cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.cpp.dir
+
+build CMakeFiles/main.cpp.dir/Date.cpp.o: CXX_COMPILER__main.2ecpp_Debug /Users/dongshaoqi/Desktop/园区值班/园区值班管理系统/Date.cpp || cmake_object_order_depends_target_main.cpp
+  DEP_FILE = CMakeFiles/main.cpp.dir/Date.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2 -fcolor-diagnostics -std=gnu++17
+  OBJECT_DIR = CMakeFiles/main.cpp.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.cpp.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target main.cpp
+
+
+#############################################
+# Link the executable main.cpp
+
+build main.cpp: CXX_EXECUTABLE_LINKER__main.2ecpp_Debug CMakeFiles/main.cpp.dir/FullTime.cpp.o CMakeFiles/main.cpp.dir/Manager.cpp.o CMakeFiles/main.cpp.dir/DormArea.cpp.o CMakeFiles/main.cpp.dir/Building.cpp.o CMakeFiles/main.cpp.dir/Date.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2
+  OBJECT_DIR = CMakeFiles/main.cpp.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = main.cpp
+  TARGET_PDB = main.cpp.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/dongshaoqi/Desktop/园区值班/园区值班管理系统/cmake-build-debug && "/Users/dongshaoqi/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/dongshaoqi/Desktop/园区值班/园区值班管理系统/cmake-build-debug && "/Users/dongshaoqi/Library/Application Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/bin/cmake" --regenerate-during-build -S/Users/dongshaoqi/Desktop/园区值班/园区值班管理系统 -B/Users/dongshaoqi/Desktop/园区值班/园区值班管理系统/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/dongshaoqi/Desktop/园区值班/园区值班管理系统/cmake-build-debug
+
+build all: phony main.cpp
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Users/dongshaoqi/Desktop/园区值班/园区值班管理系统/CMakeLists.txt /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Users/dongshaoqi/Desktop/园区值班/园区值班管理系统/CMakeLists.txt /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCInformation.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-C.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/AppleClang-CXX.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/Clang.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Compiler/GNU.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-C.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-C.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang-CXX.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Apple-Clang.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin-Initialize.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/Darwin.cmake /Users/dongshaoqi/Library/Application$ Support/JetBrains/Toolbox/apps/CLion/ch-0/223.8617.54/CLion.app/Contents/bin/cmake/mac/share/cmake-3.24/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all
